@@ -98,7 +98,6 @@ function checkForWinner() {
         document.querySelector("#no-winner").play();
         winner.setAttribute('src', "./images/no-winner.png");
         responseText.innerHTML = "There was no Winner";
-        responseText.style.color = "#f00";
         winner.parentElement.style.borderColor = "red"; 
         player1Choice.setAttribute('src', "./images/play.png");
         player2Choice.setAttribute('src', "./images/play.png");
