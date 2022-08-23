@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Sicsors</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="container-main">
+        <div class="container-center">
+            <audio loop id="background-sound"> 
+                <source src="./audio/play2.wav" type="audio/wav">
+            </audio>
+            <audio id="no-winner"> 
+                <source src="./audio/no-winner.wav" type="audio/wav">
+            </audio>
+            <audio id="winner"> 
+                <source src="./audio/winner.wav" type="audio/wav">
+            </audio>
+            <audio id="start-game"> 
+                <source src="./audio/start-game.wav" type="audio/wav">
+            </audio>
+            <div class="sub-container f-sub-container">
+                <div class="f-inner-container">
+                    <div class="f-inner-content">Players</div>
+                    <div class="f-inner-content">Score</div>
+                </div>
+                <div class="f-inner-container">
+                    <div class="f-inner-content" id="player1">Player 1</div>
+                    <div class="f-inner-content" id="player1-score">0</div>
+                </div>
+                <div class="f-inner-container">
+                    <div class="f-inner-content" id="player2">Player 2</div>
+                    <div class="f-inner-content" id="player2-score">0</div>
+                </div>
+            </div>
+            <div class="sub-container play-activator">
+                <div class="image-container">
+                    <img src="./images/rock-paper-sicsors.png" alt="rock paper sicsors image" class="hero-image rotate">
+                    <button id="play-button" class="start space-between">Play</button>  
+                </div>
+            </div>
+            <div class="sub-container form-container">
+                <div name="usernames">
+                    <div class="input-feilds">
+                        <input type="text" placeholder="Player 1" id="playre1-name">
+                        <div>
+                            <span class="playererr player1err">Enter a name for Player 1</span>
+                        </div>
+                    </div>
+                    <div class="input-feilds">
+                        <input type="text" placeholder="Player 2" id="playre2-name">
+                        <div>
+                            <span class="playererr player2err">Enter a name for Player 2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="play-button">
+                    <button id="start-button" class="start space-between">Start</button>  
+                </div>
+            </div>
+            <div class="sub-container play-section">
+                <div class="contents">
+                   <h2 class="main-heading">ROCK PAPER SICSORS</h2>                
+                </div>
+                <div class="contents sb-contianer">
+                    <div class="image-container2">
+                        <img height="50" width="50" src="./images/play.png" alt="" id="player1-result" class="space-between">
+                    </div>
+                    <div class="image-container2">
+                        <img height="50" width="50"  src="./images/play.png" alt="" id="player2-result" class="space-between">
+                    </div>
+                </div>
+                <div class="contents sb-contianer">
+                    <button class="play space-between">Fight</button>               
+                    <!-- <button id="player2" class="play space-between">Player 2</button>                -->
+                </div>
+                <div class="contents">
+                    <p id="result"></p>
+                </div>
+                <div>
+                    <p class="how-to-play">Click on the Button above to Fight</p>
+                </div>
+            </div>
+            <div class="sub-container winner-section">
+                <div class="inner-cele image-container2 wi-container">
+                    <img src="" alt="winner" class="winner-img" height="100" width="100">
+                </div>
+                <div class="inner-cele">
+                    <p class="reponse-text"></p>
+                </div>
+                <div class="inner-cele">
+                    <button id="play-again">Play Again</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
