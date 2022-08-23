@@ -19,6 +19,7 @@ fight.addEventListener('click', choose);
 // creating the fight function
 function choose() {
     if(fight) {
+        responseText.style.color = "#fff";
         player1Option = Math.floor(Math.random() * 3);
         player2Option = Math.floor(Math.random() * 3);
         player1Choice.setAttribute('src',options[player1Option]);
