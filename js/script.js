@@ -124,7 +124,7 @@ function player1Won() {
     document.querySelector("#background-sound").pause();
     document.querySelector("#winner").play();    
     responseText.innerHTML = "Player 1 Won";
-    responseText.style.color = "#fff";
+    responseText.style.color = "white";
     player1Score += 1;
     winner.setAttribute('src',options[player1Option]);
     winner.parentElement.style.borderColor = "#0090ff";
@@ -137,7 +137,7 @@ function player2Won() {
     document.querySelector("#background-sound").pause();
     document.querySelector("#winner").play();
     responseText.innerHTML = "Player 2 Won";
-    responseText.style.color = "#fff";
+    responseText.style.color = "white";
     player2Score += 1;
     winner.setAttribute('src',options[player2Option]);
     winner.parentElement.style.borderColor = "orange";
